@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 258.943 s <<< FAILURE! - in TestSuite
+testInvalidLogin(script.InvalidLogin)  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+	at script.InvalidLogin.testInvalidLogin(InvalidLogin.java:12)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+	at script.InvalidLogin.testInvalidLogin(InvalidLogin.java:12)
+
+testCheckProductVersion(script.CheckProductVersion)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+	at script.CheckProductVersion.testCheckProductVersion(CheckProductVersion.java:14)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+	at script.CheckProductVersion.testCheckProductVersion(CheckProductVersion.java:14)
+

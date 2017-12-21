@@ -1,12 +1,7 @@
 <suite name="Suite" parallel="tests">
-<!--   <TEST NAME="TESTGC"> -->
-<!--    <PARAMETER NAME="BROWSER" VALUE="CHROME"/> -->
-<!--     <PACKAGES> -->
-<!-- 	 <PACKAGE NAME="SCRIPT"/> -->
-<!-- 	</PACKAGES> -->
-<!--   </TEST> -->
-  <test name="TestFF">
-   <parameter name="browser" value="firefox"/>
+  <test name="TestGC">
+   <parameter name="browser" value="chrome"/>
+   <parameter name="ip" value="192.168.0.39"/>
     <packages>
 	 <package name="script"/>
 	</packages>

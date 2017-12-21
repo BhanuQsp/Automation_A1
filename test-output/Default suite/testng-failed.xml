@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.CheckProductVersion">
+      <class name="script.GridDemo">
         <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
+          <include name="testGrid"/>
         </methods>
-      </class> <!-- script.CheckProductVersion -->
+      </class> <!-- script.GridDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

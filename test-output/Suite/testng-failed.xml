@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <test name="TestGC(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="script.Demo">
+      <class name="script.CheckProductVersion">
         <methods>
-          <include name="testA"/>
+          <include name="testCheckProductVersion"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
         </methods>
-      </class> <!-- script.Demo -->
+      </class> <!-- script.CheckProductVersion -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestGC(failed) -->
 </suite> <!-- Failed suite [Suite] -->
