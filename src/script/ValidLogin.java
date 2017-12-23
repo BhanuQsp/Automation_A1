@@ -3,7 +3,6 @@ package script;
 import page.LoginPage;
 import org.testng.annotations.Test;
 import generic.BaseTest;
-import generic.Excel;
 import page.EnterTimeTrackPage;
 
 public class ValidLogin extends BaseTest {
