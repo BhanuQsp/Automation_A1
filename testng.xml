@@ -1,7 +1,7 @@
 <suite name="Suite" parallel="tests">
   <test name="TestGC">
    <parameter name="browser" value="chrome"/>
-   <parameter name="ip" value="192.168.0.39"/>
+   <parameter name="ip" value="192.168.1.102"/>
     <packages>
 	 <package name="script"/>
 	</packages>
