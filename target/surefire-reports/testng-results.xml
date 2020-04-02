@@ -1,172 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Title is Matching]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="258163" started-at="2017-12-21T02:33:05Z" finished-at="2017-12-21T02:37:24Z">
+  <suite started-at="2020-04-02T07:43:29Z" name="Suite" finished-at="2020-04-02T07:44:07Z" duration-ms="37824">
     <groups>
       <group name="smoke">
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@73f792cf]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@646be2c3]" name="testValidLogin" class="script.ValidLogin"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@79698539]" name="testInvalidLogin" class="script.InvalidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@73f792cf]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@646be2c3]" name="testValidLogin" class="script.ValidLogin"/>
       </group> <!-- login -->
-      <group name="version">
-        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@79b4d0f]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
-      </group> <!-- version -->
     </groups>
-    <test name="TestGC" duration-ms="258163" started-at="2017-12-21T02:33:05Z" finished-at="2017-12-21T02:37:24Z">
-      <class name="script.CheckProductVersion">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckProductVersion@79b4d0f]" name="openApplication" is-config="true" duration-ms="10859" started-at="2017-12-21T08:07:12Z" finished-at="2017-12-21T08:07:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[192.168.0.39]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@79b4d0f]" name="testCheckProductVersion" duration-ms="1" started-at="2017-12-21T08:07:23Z" finished-at="2017-12-21T08:07:23Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
-	at generic.Excel.getCellValue(Excel.java:11)
-	at script.CheckProductVersion.testCheckProductVersion(CheckProductVersion.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckProductVersion -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@79b4d0f]" name="closeApplication" is-config="true" duration-ms="617" started-at="2017-12-21T08:07:23Z" finished-at="2017-12-21T08:07:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCheckProductVersion status=FAILURE method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@79b4d0f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.CheckProductVersion -->
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@79698539]" name="openApplication" is-config="true" duration-ms="5785" started-at="2017-12-21T08:03:42Z" finished-at="2017-12-21T08:03:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[192.168.0.39]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@79698539]" name="testInvalidLogin" duration-ms="21" started-at="2017-12-21T08:03:48Z" finished-at="2017-12-21T08:03:48Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
-	at generic.Excel.getRowCount(Excel.java:22)
-	at script.InvalidLogin.testInvalidLogin(InvalidLogin.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@79698539]" name="closeApplication" is-config="true" duration-ms="203912" started-at="2017-12-21T08:03:48Z" finished-at="2017-12-21T08:07:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=FAILURE method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@79698539] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.GridDemo">
-        <test-method status="PASS" signature="testGrid()[pri:0, instance:script.GridDemo@6b2fad11]" name="testGrid" duration-ms="12312" started-at="2017-12-21T08:03:05Z" finished-at="2017-12-21T08:03:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGrid -->
-      </class> <!-- script.GridDemo -->
+    <test started-at="2020-04-02T07:43:29Z" name="TestGC" finished-at="2020-04-02T07:44:07Z" duration-ms="37824">
       <class name="script.ValidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@73f792cf]" name="openApplication" is-config="true" duration-ms="17239" started-at="2017-12-21T08:03:18Z" finished-at="2017-12-21T08:03:35Z">
+        <test-method is-config="true" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@646be2c3]" started-at="2020-04-02T13:13:29Z" name="openApplication" finished-at="2020-04-02T13:13:59Z" duration-ms="29831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,25 +25,25 @@ Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workboo
             </param>
             <param index="1">
               <value>
-                <![CDATA[192.168.0.39]]>
+                <![CDATA[localhost]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@73f792cf]" name="testValidLogin" duration-ms="7330" started-at="2017-12-21T08:03:35Z" finished-at="2017-12-21T08:03:42Z">
+        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@646be2c3]" started-at="2020-04-02T13:13:59Z" name="testValidLogin" finished-at="2020-04-02T13:14:07Z" duration-ms="7752" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Title is Matching]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@73f792cf]" name="closeApplication" is-config="true" duration-ms="62" started-at="2017-12-21T08:03:42Z" finished-at="2017-12-21T08:03:42Z">
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@646be2c3]" started-at="2020-04-02T13:14:07Z" name="closeApplication" finished-at="2020-04-02T13:14:07Z" duration-ms="208" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@73f792cf] output=Title is Matching]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@646be2c3] output=Title is Matching]]]>
               </value>
             </param>
           </params>

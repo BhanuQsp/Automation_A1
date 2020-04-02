@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
-  <test name="TestGC(failed)" parallel="tests">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <test parallel="tests" name="TestGC(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="ip" value="192.168.0.39"/>
+    <parameter name="ip" value="localhost"/>
     <classes>
       <class name="script.ValidLogin">
         <methods>
+          <include name="testValidLogin"/>
           <include name="closeApplication"/>
           <include name="openApplication"/>
         </methods>
       </class> <!-- script.ValidLogin -->
-      <class name="script.InvalidLogin">
-        <methods>
-          <include name="testInvalidLogin"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.CheckProductVersion">
-        <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.CheckProductVersion -->
     </classes>
   </test> <!-- TestGC(failed) -->
 </suite> <!-- Failed suite [Suite] -->
